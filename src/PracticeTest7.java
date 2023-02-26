@@ -24,7 +24,6 @@ public class PracticeTest7 {
 		//2. Get me the count of links present in the Footer Section
 		
 		WebElement footerdriver = driver.findElement(By.id("gf-BIG"));
-		
 		System.out.println(footerdriver.findElements(By.tagName("a")).size());	//limiting to footer
 		
 		//System.out.println(driver.findElements(By.tagName("a")).size());
@@ -32,7 +31,6 @@ public class PracticeTest7 {
 		//3. Get me the count from 1st section of Footer
 		
 		WebElement columndriver = footerdriver.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
-		
 		System.out.println(columndriver.findElements(By.tagName("a")).size());
 		
 		//4. Check on each link in the column and check if the pages are opening
